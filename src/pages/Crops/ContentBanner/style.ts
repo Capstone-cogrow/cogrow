@@ -8,7 +8,8 @@ export const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  margin-top: 40px;
+  padding-bottom: 180px;
 
   @media screen and (max-width: 768px) {
     display:flex;

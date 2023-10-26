@@ -5,7 +5,7 @@ import { FONT_STYLE } from "../../styles/font";
 export const MainTitleContainer = styled.div`
 display: flex;
   justify-content: center;
-  padding: 80px 0px 70px 0;
+  padding: 60px 0px 50px 0;
   width: 100%;
 `;
 

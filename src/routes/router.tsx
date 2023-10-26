@@ -5,6 +5,7 @@ import Crops from "../pages/Crops";
 import Recipe from "../pages/Recipe";
 import Introduce from "../pages/Introduce";
 import CropsManage from "../pages/CropsManage";
+import CropsRegistration from "../pages/CropsRegistration";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path="/disease" element={<Disease />} />
         <Route path="/crops" element={<Crops />} />
         <Route path="/cropsManage" element={<CropsManage />} />
+        <Route path="/cropsRegistration" element={<CropsRegistration />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/introduce" element={<Introduce />} />
       </Routes>

@@ -14,11 +14,13 @@ import {
 
 const AddCropCardButton = () => {
   return (
-    <AddCropButton>
-      <IconContainer>
-        <PlusMinusIcon toMinus={false} width={12} height={12} thickness={10} />
-      </IconContainer>
-    </AddCropButton>
+    <a href="/cropsRegistration">
+      <AddCropButton>      
+        <IconContainer>
+          <PlusMinusIcon toMinus={false} width={12} height={12} thickness={10} />
+        </IconContainer>      
+      </AddCropButton>
+    </a>
   );
 };
 

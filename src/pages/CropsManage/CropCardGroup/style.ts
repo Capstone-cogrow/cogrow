@@ -11,7 +11,8 @@ export const GridContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 `;
 
 // interface GridProps {
@@ -32,6 +33,7 @@ export const GridContainer = styled.div`
 // `;
 
 export const AddCropButton = styled.div`
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;

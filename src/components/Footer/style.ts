@@ -18,7 +18,7 @@ export const FooterContainer = styled.div`
 export const Row1 = styled.div`
 align-items: center;
 display: inline-block;
-border-bottom: 1px solid #D0D0D0;
+border-bottom: 1px solid #A8BFB2;
 `;
 
 export const Row2 = styled.div`
