@@ -10,7 +10,8 @@ export const WrapperContainer = styled.nav`
   align-items: flex-start;
   justify-content: center;
   contain: style layout inline-size;
-  background-color: #f9fafb;
+  background-color: #fff;
+  border-bottom: 1px solid #EEEEEE;
 
   @media screen and (max-width: 960px) {
     flex-direction: column;
@@ -92,13 +93,12 @@ export const MainMenubar = styled.ul<{ menu: boolean }>`
     clear: both;
     display: block;
   }
-
   @media screen and (max-width: 960px) {
     flex-direction: column;
     align-items: center;
     //overflow: hidden;
     margin-top: 10px;
-    padding-left: 0;
+    padding-left: 0px;
     width: 100%;
 
     display: ${({ menu }) => {
@@ -213,6 +213,6 @@ export const ToggleBtn = styled.a`
 
   @media screen and (max-width: 960px) {
     display: block;
-    padding: 5px 20px;
+    padding: 15px 20px;
   }
 `;

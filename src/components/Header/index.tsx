@@ -34,21 +34,21 @@ export const Header = ({
   return (
     <WrapperContainer>
       <script type="module" src="./toggleEvent.ts" defer></script>
-      <WebLogoContainer>
-        <MainLogoImg />
+      <WebLogoContainer>        
+        <a href="/"><MainLogoImg /></a>
       </WebLogoContainer>
       <MainMenubar menu={menu}>
         <MainMenubarList>
-          <a href="/member">코그로우 소개</a>
+          <a href="/introduce">코그로우 소개</a>
         </MainMenubarList>
         <MainMenubarList>
-          <a href="/seminar">질병 진단</a>
+          <a href="/disease">질병 진단</a>
         </MainMenubarList>
         <MainMenubarList>
-          <a href="/seminar">농작물 등록</a>
+          <a href="/crops">농작물 관리</a>
         </MainMenubarList>
         <MainMenubarList>
-          <a href="/seminar">레시피 추천</a>
+          <a href="/recipe">레시피 추천</a>
         </MainMenubarList>
       </MainMenubar>
       <UserContainer menu={menu}>
@@ -56,7 +56,7 @@ export const Header = ({
         {user ? (
           <>
             <UserName>
-              &nbsp;&nbsp;&nbsp; " <b>{user.name}</b> "  님
+              &nbsp;<b>{user.name}</b> 님
             </UserName>
             <Button size="small" onClick={onLogout} label="로그아웃" />
           </>

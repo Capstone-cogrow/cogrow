@@ -4,8 +4,8 @@ import Banner, { ImageFloat } from "./MainBanner";
 
 import MainBannerImage from "../../assets/images/plant.png";
 import MainBanner from "./MainBanner";
-import AppBanner from "./AppBanner";
 import ContentBanner from "./ContentBanner";
+import Footer from "../../components/Footer";
 
 type User = {
   name: string;
@@ -33,6 +33,8 @@ const Main = () => {
       />
 
       <ContentBanner/>
+
+      <Footer/>
     </>
   );
 };
