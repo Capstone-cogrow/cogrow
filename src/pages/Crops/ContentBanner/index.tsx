@@ -34,7 +34,7 @@ const CropsContentBanner = () => {
             </a>
           </CropsContainer>
           <CropsContainer>
-            <a href="/#">
+            <a href="/cropsRecommend">
             <CropsImg>
               <SecondImg/>
             </CropsImg>

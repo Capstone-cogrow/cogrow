@@ -8,7 +8,7 @@ type User = {
   name: string;
 };
 
-const Recipe = () => {
+const RecipeList = () => {
   const [user, setUser] = useState<User>();
 
   return (
@@ -21,7 +21,7 @@ const Recipe = () => {
       />
 
       <MainTitle
-      title="레시피 추천"
+      title="감자"
       />
 
       <SearchContent/>
@@ -31,4 +31,4 @@ const Recipe = () => {
   );
 };
 
-export default Recipe;
+export default RecipeList;

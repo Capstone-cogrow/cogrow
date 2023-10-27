@@ -34,7 +34,7 @@ const AddCropsForm = ({
       <Section>
         <FormSection>
         <ImgForm>
-        <ImageContainer>        
+        <ImageContainer>upload image        
         </ImageContainer>
         <ButtonContainer>
         <Add type="submit">추가</Add>

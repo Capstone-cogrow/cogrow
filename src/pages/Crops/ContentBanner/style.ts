@@ -8,8 +8,8 @@ export const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  padding-bottom: 180px;
+  margin-top: 10px;
+  padding-bottom: 75px;
 
   @media screen and (max-width: 768px) {
     display:flex;
@@ -18,7 +18,7 @@ export const Section = styled.div`
 `;
 
 export const CropsSection = styled.div`
-  width: 770px;
+  width: 780px;
   display: flex;
   justify-content: center;
   align-items: center;

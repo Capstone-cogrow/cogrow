@@ -2,13 +2,12 @@ import { useState } from "react";
 import { Header } from "../../components/Header";
 import MainTitle from "../../components/MainTitle";
 import Footer from "../../components/Footer";
-import SearchContent from "./SearchContent";
 
 type User = {
   name: string;
 };
 
-const Recipe = () => {
+const CropsRecommend = () => {
   const [user, setUser] = useState<User>();
 
   return (
@@ -21,14 +20,12 @@ const Recipe = () => {
       />
 
       <MainTitle
-      title="레시피 추천"
+      title="작물 추천"
       />
 
-      <SearchContent/>
-      
       <Footer/>
     </>
   );
 };
 
-export default Recipe;
+export default CropsRecommend;
