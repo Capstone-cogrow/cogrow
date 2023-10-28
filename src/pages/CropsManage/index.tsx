@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "../../components/Footer";
 import { Header } from "../../components/Header";
-import SeminarCardGroup from "./CropCardGroup";
+import CropCardGroup from "./CropCardGroup";
 import MainTitle from "../../components/MainTitle";
 
 type User = {
@@ -23,7 +23,7 @@ const CropsManage = () => {
         title="내 작물 관리"
       />
 
-      <SeminarCardGroup
+      <CropCardGroup
         values={[
           {
             id: 0,
@@ -45,6 +45,7 @@ const CropsManage = () => {
           },
         ]}
       />
+      
       <Footer />
     </>
   );

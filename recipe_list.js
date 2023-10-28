@@ -1,8 +1,9 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const log = console.log;
+const fs = require("fs");
 
-const crop = "사과";
+const crop = "옥수수";
+const dataPath = "./recipe.json";
 
 const getHtml = async () => {
   try {
@@ -14,7 +15,6 @@ const getHtml = async () => {
 
 getHtml()
   .then(html => {
-    let ulList = [];
     const $ = cheerio.load(html.data);
     const RecipeList = $("div.contain > div.search_con > div > ul > li");
     const recipeListData = RecipeList
@@ -25,6 +25,8 @@ getHtml()
         title: $(div).find("a > div.text_box > p.b_title").text(),
       }))
       .toArray();
+    fs.writeFileSync(dataPath, JSON.stringify(recipeListData));
     console.log(recipeListData);
   })
-  
+
+  module.exports = { getHtml };

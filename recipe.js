@@ -19,12 +19,12 @@ getHtml()
     const Title = $("div.rec_view_top.clr");
     const titleData = Title
       .map((index, div) => ({
-        Image: $(div).find("div.fl.rec_view_img > img").attr('src'),
-        Title: $(div).find("div.fr.rec_info > div.rec_exp > h2").text(),
-        Sub_Title: $(div).find("div.fr.rec_info > div.rec_exp > p").text(),
-        Exp: $(div).find("div.fr.rec_info > div.rec_exp > div").text(),
-      }))
-      .toArray();
+          Image: $(div).find("div.fl.rec_view_img > img").attr('src'),
+          Title: $(div).find("div.fr.rec_info > div.rec_exp > h2").text(),
+          Sub_Title: $(div).find("div.fr.rec_info > div.rec_exp > p").text(),
+          Exp: $(div).find("div.fr.rec_info > div.rec_exp > div").text(),
+            
+      })).toArray();
 
     // 재료
     const Ingredients = $("div.rec_view_top.clr > div.fr.rec_info > div.rec_mate > div");
@@ -50,5 +50,5 @@ getHtml()
       .toArray();
 
 
-    console.log(titleData, ingredientData, RecipeImgData, recipeData);
+    console.log(titleData[0].Title, ingredientData, RecipeImgData, recipeData);
   })
