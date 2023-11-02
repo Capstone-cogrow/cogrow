@@ -6,6 +6,8 @@ import {
   LeftContainer,
   HeadTitle,
   ImageContainer,
+  Image,
+  Input,
   ButtonContainer,
   Add,
   Delete,
@@ -13,6 +15,7 @@ import {
   ImgTip,
   Registor,
 } from "./style";
+import { useState } from "react";
 
 export const ImageFloat = {
   Left: 0,
@@ -27,18 +30,36 @@ const DiseaseContent = ({
   title,
 }: MainTitleProps) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  const [imageSrc, setImageSrc]: any = useState(null);
+
+  const onUpload = (e: any) => {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+
+      return new Promise<void>((resolve) => { 
+          reader.onload = () => {	
+              setImageSrc(reader.result || null); // 파일의 컨텐츠
+              resolve();
+          };
+      });
+  }
+
   return (
     <>
       <Section>
         <TopSection>
         <LeftContainer>
         <HeadTitle>나의 작물 진단</HeadTitle>
-        <ImageContainer>upload image        
+        <ImageContainer>
+          <Image src={imageSrc} />
         </ImageContainer>
-        <ButtonContainer>
-        <Add type="submit">등록</Add>
-        <Delete type="submit">삭제</Delete>
-        </ButtonContainer>
+        <Input 
+            accept="image/*" 
+            multiple type="file"
+            onChange={e => onUpload(e)}
+        />        
         </LeftContainer>
 
          <RightContainer>    

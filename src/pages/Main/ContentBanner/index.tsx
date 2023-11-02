@@ -24,7 +24,7 @@ const ContentBanner = () => {
         </HeadTitle>
       </HeadContainer>
       <Banner
-        image={ContentBannerImage1}
+        image="https://github.com/YounJ00/YounJ00.github.io/assets/91127380/a07792f7-c3c5-428b-8f6d-19e56e9070ad"
         imageFloat={ImageFloat.Right}
         imageWidth={330}
         summary="질병 바로 진단"
@@ -33,7 +33,7 @@ const ContentBanner = () => {
         explain="질병 상태를 추적하고 증상의 원인을 빠르게 파악하여 필요한 조치를 취할 수 있습니다."      
       />
       <Banner
-        image={ContentBannerImage2}
+        image="https://github.com/YounJ00/YounJ00.github.io/assets/91127380/2f5f5cd0-190b-4004-8a83-f3456a01a5c5"
         imageFloat={ImageFloat.Left}
         imageWidth={330}
         summary="나만의 농작물 관리"
@@ -42,7 +42,7 @@ const ContentBanner = () => {
         explain="다양한 종류의 농작물을 효과적으로 관리하고 감독할 수 있는 기능을 갖추고 있습니다."
       />
       <Banner
-        image={ContentBannerImage1}
+        image="https://github.com/YounJ00/YounJ00.github.io/assets/91127380/d96912fa-0a94-4138-ac3d-28390fb23e82"
         imageFloat={ImageFloat.Right}
         imageWidth={330}
         summary="오늘 무슨 요리하지?"

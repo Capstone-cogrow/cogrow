@@ -17,6 +17,7 @@ export const Thumbnail = styled.img`
   border-radius: 27px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  background-color: #fff;
 `;
 
 export const Title = styled.div`

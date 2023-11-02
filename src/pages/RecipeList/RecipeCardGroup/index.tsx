@@ -1,8 +1,10 @@
+import { useEffect,useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Grid from "../../../components/Grid";
 import Pagination from "../../../components/Pagination";
-import { PlusMinusIcon } from "../../../components/PlusMinuxIconProps";
 import CropCard from "../RecipeCard";
+
+import axios from 'axios';
 import {
   AddCropButton,
   Container,
@@ -11,18 +13,7 @@ import {
   PaginationContainer,
 } from "./style";
 
-
-const AddRecipeCardButton = () => {
-  return (
-    <a href="/cropsRegistration">
-      <AddCropButton>      
-        <IconContainer>
-          <PlusMinusIcon toMinus={false} width={12} height={12} thickness={10} />
-        </IconContainer>      
-      </AddCropButton>
-    </a>
-  );
-};
+const SERVER_URL = 'http://localhost:3000/api/recipe';
 
 type RecipeCardData = {
   id: number;
@@ -41,20 +32,36 @@ const RecipeCardGroup = ({ values }: RecipeCardGroupProps) => {
   const hasOnlyOneItem = isAuthenticated
     ? values.length < 1
     : values.length < 4;
-  const columns = isMobile || hasOnlyOneItem ? 2 : 4;
+  const columns = isMobile || hasOnlyOneItem ? 4 : 4;
+
+  const [recipeList, setRecipeList] = useState<any[]>([]);
+
+  const fetchData = async () => {
+    const response = await axios.get(SERVER_URL);
+    setRecipeList(response.data);
+
+    //fetch('http://localhost:3000/api/todo')
+    //  .then((response) => response.json())
+    //  .then((data) => setTodoList(data));
+  };
+
+  useEffect(() => {fetchData()}, []);
+
 
   return (
+    <>
     <Container>
       <GridContainer>
         <Grid columns={columns} gap={32}>
-          {values.map((data, index) => (
+          {recipeList?.map((data, index) => (
+            <a href={data.link}>
             <CropCard
               key={data.id}
-              thumbnail={data.thumbnail}
+              thumbnail={data.img_url}
               title={data.title}
-              subtitle={data.subtitle}
+              subtitle={data.sub_title}
               onClick={() => console.log("clicked " + index)}
-            />
+            /></a>
           ))}
         </Grid>
       </GridContainer>
@@ -63,6 +70,7 @@ const RecipeCardGroup = ({ values }: RecipeCardGroupProps) => {
         <Pagination count={1} onPageClick={(index) => console.log(index)} />
       </PaginationContainer>
     </Container>
+    </>
   );
 };
 export default RecipeCardGroup;

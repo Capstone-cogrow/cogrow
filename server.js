@@ -14,8 +14,6 @@ const ProudctJSON = fs.readFileSync("./recipe.json");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-
 async function getProductAsync() {
   const Product_data = await getRecipeList();
   console.log("Product = ", Product_data);

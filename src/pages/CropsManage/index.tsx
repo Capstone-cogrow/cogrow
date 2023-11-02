@@ -27,21 +27,21 @@ const CropsManage = () => {
         values={[
           {
             id: 0,
-            thumbnail: "https://picsum.photos/800/600",
+            thumbnail: "https://github.com/YounJ00/YounJ00.github.io/assets/91127380/22fd691e-2c17-4657-9e9b-4d9b0b279d2a",
             title: "방울이",
             subtitle: "토마토",
           },
           {
             id: 1,
-            thumbnail: "https://picsum.photos/800/600",
+            thumbnail: "https://github.com/YounJ00/YounJ00.github.io/assets/91127380/bab58793-6a1c-43f4-a5aa-233baa5fd53a",
             title: "포포",
             subtitle: "감자",
           },
           {
             id: 2,
-            thumbnail: "https://picsum.photos/800/600",
-            title: "애플이",
-            subtitle: "사과",
+            thumbnail: "https://github.com/YounJ00/YounJ00.github.io/assets/91127380/e717012d-d341-4707-aa35-101f912902b7",
+            title: "코니",
+            subtitle: "옥수수",
           },
         ]}
       />

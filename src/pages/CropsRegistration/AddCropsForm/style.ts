@@ -38,6 +38,18 @@ export const ImageContainer = styled.div`
   height: 288px;
 `;
 
+export const Image = styled.img`
+  border-radius: 10px;
+  width: 100%;
+`;
+
+export const InputImage = styled.input`
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 14px;
+  width: 200px;
+`;
+
 export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;

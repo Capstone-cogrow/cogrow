@@ -40,10 +40,22 @@ export const HeadTitle = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-  border-radius: 13px;
+  border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   width: 230px;
-  height: 250px;
+  height: 230px;
+`;
+
+export const Image = styled.img`
+  border-radius: 10px;
+  width: 100%;
+`;
+
+export const Input = styled.input`
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 14px;
+  width: 200px;
 `;
 
 export const ButtonContainer = styled.div`
@@ -95,7 +107,7 @@ export const ImgTip = styled.img.attrs({
 `;
 
 export const Registor = styled.button`
-  //margin-top: 20px;
+  margin-top: 15px;
   background-color: #40B36E;
   border-radius : 10px;
   box-shadow: 3px 3px 3px -1px #DBDBDB;

@@ -15,6 +15,7 @@ export const GridContainer = styled.div`
   margin-bottom: 50px;
 `;
 
+
 // interface GridProps {
 //   hasOnlyOneItem: boolean;
 // }
