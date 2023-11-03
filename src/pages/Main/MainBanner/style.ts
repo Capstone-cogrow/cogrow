@@ -12,6 +12,7 @@ export const Section = styled.div<MobileCapabilities>`
   width: 100%;
   box-sizing: border-box;
   background-color: #f9fafb;
+  
 `;
 
 export const Container = styled.div<MobileCapabilities>`

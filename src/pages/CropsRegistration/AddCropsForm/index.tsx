@@ -31,6 +31,12 @@ const AddCropsForm = ({
 
   const [imageSrc, setImageSrc]: any = useState(null);
 
+  const [name, setName] = useState("");
+  const [type, setType] = useState("");
+  const [date, setDate] = useState("");
+  const [location, setLocation] = useState("");
+  const [state, setState] = useState("");
+
   const onUpload = (e: any) => {
       const file = e.target.files[0];
       const reader = new FileReader();
@@ -60,16 +66,40 @@ const AddCropsForm = ({
         </ImgForm>
          <TextForm>
             <Fieldset>
-              <Title>이름</Title> <Input type="text" name="name" /> 
-              <Title>종류</Title> <Input type="text" name="type"/>
-              <Title>시작 날짜</Title> <Input type="text" name="date"/>
-              <Title>키우는 장소</Title> <Input type="text" name="location"/>
-              <Title>현재 상태</Title> <Input type="text" name="state"/>
+              <Title>이름</Title> <Input type="text" name="name" onChange={event => {setName(event.target.value);}} /> 
+              <Title>종류</Title> <Input type="text" name="type" onChange={event => {setType(event.target.value);}} />
+              <Title>시작 날짜</Title> <Input type="text" name="date" onChange={event => {setDate(event.target.value);}} />
+              <Title>키우는 장소</Title> <Input type="text" name="location" onChange={event => {setLocation(event.target.value);}} />
+              <Title>현재 상태</Title> <Input type="text" name="state" onChange={event => {setState(event.target.value);}} />
             </Fieldset>           
         </TextForm>
         </FormSection>
         <ButtonSection>
-        <Registor type="submit">등록하기</Registor>
+        <Registor type="submit" onClick={() => {
+        const cropData = {
+          cropName: name,
+          cropType: type,
+          cropDate: date,
+          cropLocation: location,
+          cropState: state,
+        };
+        fetch("http://localhost:5000/crop", { //auth 주소에서 받을 예정
+          method: "POST", // method :통신방법
+          headers: {      // headers: API 응답에 대한 정보를 담음
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(cropData), //userData라는 객체를 보냄
+        })
+        .then((res) => res.json())
+        .then((json) => {
+          if(json.isSuccess==="True"){
+            alert('회원가입이 완료되었습니다!')
+          }
+          else{
+            alert(json.isSuccess)
+          }
+        });
+      }} >등록하기</Registor>
         </ButtonSection>        
       </Section>
       
