@@ -3,6 +3,9 @@ import Grid from "../../../components/Grid";
 import Pagination from "../../../components/Pagination";
 import { PlusMinusIcon } from "../../../components/PlusMinuxIconProps";
 import CropCard from "../CropCard";
+
+import axios from 'axios';
+
 import {
   AddCropButton,
   Container,
@@ -10,7 +13,9 @@ import {
   IconContainer,
   PaginationContainer,
 } from "./style";
+import { useEffect, useState } from "react";
 
+const SERVER_URL = 'http://localhost:5000/crop';
 
 const AddCropCardButton = () => {
   return (
@@ -43,17 +48,30 @@ const CropCardGroup = ({ values }: CropCardGroupProps) => {
     : values.length < 4;
   const columns = isMobile || hasOnlyOneItem ? 2 : 4;
 
+  const [cropList, setCropList] = useState<any[]>([]);
+
+  const fetchData = async () => {
+    const response = await axios.get(SERVER_URL);
+    setCropList(response.data);
+
+    //fetch('http://localhost:3000/api/todo')
+    //  .then((response) => response.json())
+    //  .then((data) => setTodoList(data));
+  };
+
+  useEffect(() => {fetchData()}, []);
+
   return (
     <Container>
       <GridContainer>
         <Grid columns={columns} gap={32}>
           <AddCropCardButton />
-          {values.map((data, index) => (
+          {cropList.map((data, index) => (
             <CropCard
               key={data.id}
-              thumbnail={data.thumbnail}
-              title={data.title}
-              subtitle={data.subtitle}
+              thumbnail={data.img_url}
+              title={data.name}
+              subtitle={data.type}
               onClick={() => console.log("clicked " + index)}
             />
           ))}

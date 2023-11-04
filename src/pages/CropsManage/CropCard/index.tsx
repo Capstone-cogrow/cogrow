@@ -21,11 +21,13 @@ const CropCard = ({
   onClick,
 }: CropCardProps) => {
   return (
+    <a href="/cropsDetail">
     <Container onClick={onClick}>
       <Thumbnail src={thumbnail} />
       <Title>{title}</Title>
       <SubTitle>{subtitle}</SubTitle>
     </Container>
+    </a>
   );
 };
 export default CropCard;

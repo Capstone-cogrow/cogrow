@@ -8,6 +8,8 @@ import CropsManage from "../pages/CropsManage";
 import CropsRegistration from "../pages/CropsRegistration";
 import CropsRecommend from "../pages/CropsRecommend";
 import RecipeList from "../pages/RecipeList";
+import CropsDetail from "../pages/CropsDetail";
+import DiseaseDetail from "../pages/DiseaseDetail";
 
 const Router = () => {
   return (
@@ -15,9 +17,11 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/disease" element={<Disease />} />
+        <Route path="/diseaseDetail" element={<DiseaseDetail />} />
         <Route path="/crops" element={<Crops />} />
         <Route path="/cropsRecommend" element={<CropsRecommend />} />
         <Route path="/cropsManage" element={<CropsManage />} />
+        <Route path="/cropsDetail" element={<CropsDetail />} />
         <Route path="/cropsRegistration" element={<CropsRegistration />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/recipeList" element={<RecipeList />} />

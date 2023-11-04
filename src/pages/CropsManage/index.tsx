@@ -20,7 +20,7 @@ const CropsManage = () => {
       />
 
       <MainTitle
-        title="내 작물 관리"
+        title="작물 등록"
       />
 
       <CropCardGroup

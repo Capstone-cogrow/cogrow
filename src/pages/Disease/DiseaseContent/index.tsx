@@ -69,7 +69,7 @@ const DiseaseContent = ({
         </TopSection>
         
         <BottomSection>
-        <Registor type="submit">진단하기</Registor>
+        <a href="/diseaseDetail"><Registor type="submit">진단하기</Registor></a>
         </BottomSection>        
       </Section>
       
