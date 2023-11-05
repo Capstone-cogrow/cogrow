@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Header } from "../../components/Header";
 import MainTitle from "../../components/MainTitle";
 import Footer from "../../components/Footer";
+import CropsRecommendContent from "./CropsRecommendContent";
 
 type User = {
   name: string;
@@ -22,6 +23,8 @@ const CropsRecommend = () => {
       <MainTitle
       title="작물 추천"
       />
+
+      <CropsRecommendContent title={""} />
 
       <Footer/>
     </>
