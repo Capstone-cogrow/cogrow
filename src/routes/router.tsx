@@ -14,7 +14,7 @@ import CropsRecommendResult from "../pages/CropsRecommendResult";
 
 const Router = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/cogrow">
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/disease" element={<Disease />} />
@@ -27,7 +27,7 @@ const Router = () => {
         <Route path="/cropsRegistration" element={<CropsRegistration />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/recipeList" element={<RecipeList />} />
-        <Route path="/cogrow/introduce" element={<Introduce />} />
+        <Route path="/introduce" element={<Introduce />} />
       </Routes>
     </BrowserRouter>
   );
