@@ -18,6 +18,7 @@
     "express": "^4.18.2",
     "express-mysql-session": "^3.0.0",
     "express-session": "^1.17.3",
+    "gh-pages": "^6.0.0",
     "history": "^5.3.0",
     "mysql2": "^3.6.2",
     "node-cron": "^3.0.2",
@@ -39,7 +40,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -75,5 +78,6 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.5.1",
     "webpack": "^5.89.0"
-  }
+  },
+  "homepage": "https://capstone-cogrow.github.io/cogrow/"
 }
