@@ -27,7 +27,7 @@ const Router = () => {
         <Route path="/cropsRegistration" element={<CropsRegistration />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/recipeList" element={<RecipeList />} />
-        <Route path="/introduce" element={<Introduce />} />
+        <Route path="/cogrow/introduce" element={<Introduce />} />
       </Routes>
     </BrowserRouter>
   );

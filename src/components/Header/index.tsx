@@ -39,7 +39,7 @@ export const Header = ({
       </WebLogoContainer>
       <MainMenubar menu={menu}>
         <MainMenubarList>
-          <a href="/introduce">코그로우 소개</a>
+          <a href="/cogrow/introduce">코그로우 소개</a>
         </MainMenubarList>
         <MainMenubarList>
           <a href="/disease">질병 진단</a>
