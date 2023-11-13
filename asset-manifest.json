@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Capstone-cogrow/cogrow/static/css/main.b7322860.css",
-    "main.js": "/Capstone-cogrow/cogrow/static/js/main.64e68182.js",
-    "static/js/787.0e49e71f.chunk.js": "/Capstone-cogrow/cogrow/static/js/787.0e49e71f.chunk.js",
-    "static/media/plant.png": "/Capstone-cogrow/cogrow/static/media/plant.97510c27038433f85ef7.png",
-    "static/media/intro2.jpg": "/Capstone-cogrow/cogrow/static/media/intro2.c82cfafd402f49c22c7c.jpg",
-    "static/media/mypage2.png": "/Capstone-cogrow/cogrow/static/media/mypage2.b895c7b19950cfe17d9b.png",
-    "static/media/mypage1.png": "/Capstone-cogrow/cogrow/static/media/mypage1.d022964ee47bbffd042d.png",
-    "static/media/Tip.png": "/Capstone-cogrow/cogrow/static/media/Tip.7a6d90b4e293e42abda4.png",
-    "static/media/recipe.png": "/Capstone-cogrow/cogrow/static/media/recipe.b5e4862252ff99ab8f6c.png",
-    "static/media/상추.png": "/Capstone-cogrow/cogrow/static/media/상추.ce28a5b91855c369461d.png",
-    "static/media/귤귤.png": "/Capstone-cogrow/cogrow/static/media/귤귤.09609d00f46096755d35.png",
-    "static/media/애플이.png": "/Capstone-cogrow/cogrow/static/media/애플이.488474eb008868d67bef.png",
-    "static/media/포포.png": "/Capstone-cogrow/cogrow/static/media/포포.f6e464f066834c30455f.png",
-    "static/media/콩.png": "/Capstone-cogrow/cogrow/static/media/콩.1718303c41ed803b3ab6.png",
-    "static/media/감자.jpg": "/Capstone-cogrow/cogrow/static/media/감자.b00e4283b36f07a0ffad.jpg",
-    "index.html": "/Capstone-cogrow/cogrow/index.html",
-    "main.b7322860.css.map": "/Capstone-cogrow/cogrow/static/css/main.b7322860.css.map",
-    "main.64e68182.js.map": "/Capstone-cogrow/cogrow/static/js/main.64e68182.js.map",
-    "787.0e49e71f.chunk.js.map": "/Capstone-cogrow/cogrow/static/js/787.0e49e71f.chunk.js.map"
+    "main.css": "/cogrow/static/css/main.b7322860.css",
+    "main.js": "/cogrow/static/js/main.d6be4f1f.js",
+    "static/js/787.0e49e71f.chunk.js": "/cogrow/static/js/787.0e49e71f.chunk.js",
+    "static/media/plant.png": "/cogrow/static/media/plant.97510c27038433f85ef7.png",
+    "static/media/intro2.jpg": "/cogrow/static/media/intro2.c82cfafd402f49c22c7c.jpg",
+    "static/media/mypage2.png": "/cogrow/static/media/mypage2.b895c7b19950cfe17d9b.png",
+    "static/media/mypage1.png": "/cogrow/static/media/mypage1.d022964ee47bbffd042d.png",
+    "static/media/Tip.png": "/cogrow/static/media/Tip.7a6d90b4e293e42abda4.png",
+    "static/media/recipe.png": "/cogrow/static/media/recipe.b5e4862252ff99ab8f6c.png",
+    "static/media/상추.png": "/cogrow/static/media/상추.ce28a5b91855c369461d.png",
+    "static/media/귤귤.png": "/cogrow/static/media/귤귤.09609d00f46096755d35.png",
+    "static/media/애플이.png": "/cogrow/static/media/애플이.488474eb008868d67bef.png",
+    "static/media/포포.png": "/cogrow/static/media/포포.f6e464f066834c30455f.png",
+    "static/media/콩.png": "/cogrow/static/media/콩.1718303c41ed803b3ab6.png",
+    "static/media/감자.jpg": "/cogrow/static/media/감자.b00e4283b36f07a0ffad.jpg",
+    "index.html": "/cogrow/index.html",
+    "main.b7322860.css.map": "/cogrow/static/css/main.b7322860.css.map",
+    "main.d6be4f1f.js.map": "/cogrow/static/js/main.d6be4f1f.js.map",
+    "787.0e49e71f.chunk.js.map": "/cogrow/static/js/787.0e49e71f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7322860.css",
-    "static/js/main.64e68182.js"
+    "static/js/main.d6be4f1f.js"
   ]
 }
