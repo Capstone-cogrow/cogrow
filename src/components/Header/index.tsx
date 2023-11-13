@@ -35,20 +35,20 @@ export const Header = ({
     <WrapperContainer>
       <script type="module" src="./toggleEvent.ts" defer></script>
       <WebLogoContainer>        
-        <a href="/"><MainLogoImg /></a>
+        <a href="/cogrow/"><MainLogoImg /></a>
       </WebLogoContainer>
       <MainMenubar menu={menu}>
         <MainMenubarList>
           <a href="/cogrow/introduce">코그로우 소개</a>
         </MainMenubarList>
         <MainMenubarList>
-          <a href="/disease">질병 진단</a>
+          <a href="/cogrow/disease">질병 진단</a>
         </MainMenubarList>
         <MainMenubarList>
-          <a href="/crops">농작물 관리</a>
+          <a href="/cogrow/crops">농작물 관리</a>
         </MainMenubarList>
         <MainMenubarList>
-          <a href="/recipe">레시피 추천</a>
+          <a href="/cogrow/recipe">레시피 추천</a>
         </MainMenubarList>
       </MainMenubar>
       <UserContainer menu={menu}>

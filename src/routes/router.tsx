@@ -14,20 +14,20 @@ import CropsRecommendResult from "../pages/CropsRecommendResult";
 
 const Router = () => {
   return (
-    <BrowserRouter basename="/cogrow">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/disease" element={<Disease />} />
-        <Route path="/diseaseDetail" element={<DiseaseDetail />} />
-        <Route path="/crops" element={<Crops />} />
-        <Route path="/cropsRecommend" element={<CropsRecommend />} />
-        <Route path="/cropsRecommendResult" element={<CropsRecommendResult />} />
-        <Route path="/cropsManage" element={<CropsManage />} />
-        <Route path="/cropsDetail" element={<CropsDetail />} />
-        <Route path="/cropsRegistration" element={<CropsRegistration />} />
-        <Route path="/recipe" element={<Recipe />} />
-        <Route path="/recipeList" element={<RecipeList />} />
-        <Route path="/introduce" element={<Introduce />} />
+        <Route path="/cogrow/" element={<Main />} />
+        <Route path="/cogrow/disease" element={<Disease />} />
+        <Route path="/cogrow/diseaseDetail" element={<DiseaseDetail />} />
+        <Route path="/cogrow/crops" element={<Crops />} />
+        <Route path="/cogrow/cropsRecommend" element={<CropsRecommend />} />
+        <Route path="/cogrow/cropsRecommendResult" element={<CropsRecommendResult />} />
+        <Route path="/cogrow/cropsManage" element={<CropsManage />} />
+        <Route path="/cogrow/cropsDetail" element={<CropsDetail />} />
+        <Route path="/cogrow/cropsRegistration" element={<CropsRegistration />} />
+        <Route path="/cogrow/recipe" element={<Recipe />} />
+        <Route path="/cogrow/recipeList" element={<RecipeList />} />
+        <Route path="/cogrow/introduce" element={<Introduce />} />
       </Routes>
     </BrowserRouter>
   );
