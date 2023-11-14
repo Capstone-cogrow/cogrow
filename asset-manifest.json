@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cogrow/static/css/main.b7322860.css",
-    "main.js": "/cogrow/static/js/main.1975de51.js",
+    "main.js": "/cogrow/static/js/main.e5e06fb4.js",
     "static/js/787.0e49e71f.chunk.js": "/cogrow/static/js/787.0e49e71f.chunk.js",
     "static/media/plant.png": "/cogrow/static/media/plant.97510c27038433f85ef7.png",
     "static/media/intro2.jpg": "/cogrow/static/media/intro2.c82cfafd402f49c22c7c.jpg",
@@ -17,11 +17,11 @@
     "static/media/감자.jpg": "/cogrow/static/media/감자.b00e4283b36f07a0ffad.jpg",
     "index.html": "/cogrow/index.html",
     "main.b7322860.css.map": "/cogrow/static/css/main.b7322860.css.map",
-    "main.1975de51.js.map": "/cogrow/static/js/main.1975de51.js.map",
+    "main.e5e06fb4.js.map": "/cogrow/static/js/main.e5e06fb4.js.map",
     "787.0e49e71f.chunk.js.map": "/cogrow/static/js/787.0e49e71f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7322860.css",
-    "static/js/main.1975de51.js"
+    "static/js/main.e5e06fb4.js"
   ]
 }
